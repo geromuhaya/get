@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #c6d1ff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+header .logo{
+    font-size: 25px;
+    font-weight: 700;
+    color: #4263eb;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: 1.3px solid #ff4500;
+    border-bottom: 1.3px solid #4263eb;
+}
+header .logo .highlight{
+    color: #ff4500;
+}
+header .nav-bar{
+    display: flex;
+    transition: 1s;
+}
+header .nav-list{
+    list-style: none;
+}
+header .nav-link{
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+header .child1,
+header .nav-link:hover{
+    background: #ff4500;
+}
+
+.menu-toggle{
+    display: none;
+}
+.hiden{
+    display: none;
+}
+.container{
+    padding-top: 100px;
+}
+.top-cards{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.card{
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #4263eb;
+    transition: 0.6s;
+}
+
+.card:hover{
+    border: 1px solid #ff4500;
+    box-shadow: 0 2px 5px rgb(0,0,0,8);
+
+}
+.card a{
+    text-decoration: none;
+    font-weight: 550;
+    color: #0000ff;
+    transition: 0.6s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card a:hover{
+  border-bottom: 1px solid #ff4500;
+  color: #ff4500;
+}
+.card i{
+    font-size: 40px;
+}
+
+
+
+
+
+@media(max-width: 768px){
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 15px;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        display: block;
+        background: #97acff;
+        border-bottom: 1px solid #ff4500;
+    }
+    header .logo{
+        font-size: 18px;
+    }
+    header .nav-bar{
+        display: none;
+        transition: 1s;
+    }
+    header .nav-link{
+        font-weight: 540;
+        color: #fff;
+        margin-left: -20px;
+    }
+    header .child1,
+    header .nav-link:hover{
+        color: #ff4500;
+        background: none;
+    }
+    header .nav-bar.active{
+        display: block;
+        transition: 1s;
+    }
+
+    .menu-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-toggle{
+        display: block;
+        height: 32px;
+        width: 32px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 32px;
+        background: #fff;
+        color: #4263eb;
+        cursor: pointer;
+        border: none;
+    }
+    .menu-toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+    .menu-toggle.active::before{
+        content: '\f00d';
+    }
+    .hiden{
+        display: block;
+        color: transparent;
+        font-size: 16px;
+    }
+    #hiden{
+        color: #555;
+    }
+
+    .container{
+        text-align: center;
+    }
+    .container .header{
+        border: 1px solid #555;
+        background-image: url('../image/bg.png');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-shadow: 1px 3px 5px rgb(0,0,0,22);
+    }
+    .container .header h1{
+        text-transform: capitalize;
+    }
+    .top-cards{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .card{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media(min-width: 768px){
+    #hiden{
+        display: none;
+    }
+}

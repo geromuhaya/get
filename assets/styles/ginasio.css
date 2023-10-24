@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgb(0, 0, 0), gray);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(37, 37, 37);
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(0,0,0,22);
+    transition: 0.6s;
+}
+header .logo{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1.5px solid #ccc;
+}
+header .logo .highlight{
+    color: #ff4500;
+}
+header .nav-bar{
+    display: flex;
+    transition: 1s;
+}
+header .nav-list{
+    list-style: none;
+}
+header .nav-link{
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+header .child1,
+header .nav-link:hover{
+    color: #ff4500;
+}
+
+.dot{
+    color: #ff4500;
+}
+.menu-toggle{
+    display: none;
+}
+.hiden{
+    display: none;
+}
+#hiden{
+    display: none;
+}
+.null-container{
+    padding-top: 100px;
+}
+.main-container{
+    margin-top: 50px;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    color: #fff;
+    margin-left: 100px;
+}
+.text1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.text2{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.name{
+    color: #ff4500;
+}
+.join-button{
+    padding: 10px 20px;
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgb(0,0,0,22);
+    cursor: pointer;
+}
+.social-icons a{
+    color: #fff;
+    padding: 14px;
+    transition: 0.6s;
+}
+.social-icons a:hover{
+    color: #000;
+    font-size: 19px;
+}
+.main-info{
+    display: flex;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100%;
+}
+.main-info a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-info .container{
+    margin: 20px;
+    transition: 0.6s;
+}
+.main-info .container:hover{
+    background: #ff4500;
+    transform: translateY(-40%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0,0,0,22);
+}
+.myheader{
+    font-weight: 550;
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 768px){
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 15px;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        display: block;
+    }
+    header .logo{
+        font-size: 18px;
+    }
+    header .nav-bar{
+        display: none;
+        transition: 1s;
+    }
+    header .nav-link{
+        font-weight: 540;
+        color: #fff;
+        margin-left: -20px;
+    }
+    header .child1,
+    header .nav-link:hover{
+        color: #ff4500;
+        background: none;
+    }
+    header .nav-bar.active{
+        display: block;
+        transition: 1s;
+    }
+
+    .menu-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-toggle{
+        display: block;
+        height: 32px;
+        width: 32px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 32px;
+        background: #fff;
+        color: #4263eb;
+        cursor: pointer;
+        border: none;
+    }
+    .menu-toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+    .menu-toggle.active::before{
+        content: '\f00d';
+    }
+    .hiden{
+        display: block;
+        color: transparent;
+        font-size: 16px;
+    }
+    #hiden{
+        color: #555;
+    }
+    .main-container{
+        margin-top: 100px;
+        display: block;
+        left: 0;
+        top: 0;
+    }
+    .local-image{
+        height: 50vh;
+        width: 50vh;
+        background: #ccc;
+        border: 5px solid #ff4500;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-container h1{
+        text-align: center;
+    }
+
+    .main-info{
+        display: block;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+    .main-info .container{
+        margin: 0;
+    }
+    
+}
