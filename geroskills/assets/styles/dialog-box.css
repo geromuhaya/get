@@ -1,0 +1,213 @@
+
+
+dialog{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 12vh;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: 0 2px 5px rgb(0,0,0,22);
+    height: 100vh;
+    width: 70vh;
+    overflow: unset;
+    scroll-behavior: unset;
+}
+dialog h1{
+    margin-left: 40px;
+}
+dialog #fechar{
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 7px;
+    font-size: 18px;
+    color: #222;
+}
+
+#comprar{
+    cursor: pointer;
+}
+dialog h1{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#all-dial{
+    margin-top: -3%;
+}
+
+dialog .fa-cart-plus{
+    position: absolute;
+    margin-top: 60px;
+    left: 50%;
+    font-size: 50px;
+    transform: translateX(-50%);
+    color: #4263eb;
+}
+
+dialog .stars{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+dialog .fa-star{
+    color: goldenrod;
+}
+
+dialog .star2{
+    margin-top: 15%;
+}
+dialog .star1{
+    margin-top: -5%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#chosing{
+    text-align: center;
+    margin-top: 10vh;
+    display: block;
+}
+
+.chosing a{
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #4263eb;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgb(0,0,0,22);
+    color: #4263eb;
+}
+.chosing a:hover{
+    border: 1px solid #ff4500;
+    color: #ff4500;
+}
+.mobile-chosing{
+    display: none;
+}
+dialog .box{
+    display: none;
+    text-align: center;
+    background: #555;
+    width: 98%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+dialog .box input{
+    height: 30px;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 17px;
+    color: #fff;
+}
+#btn{
+    background: orange;
+    margin-top: 32px;
+}
+
+.link2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+    cursor: pointer;
+    margin-top: 20%;
+}
+.link2:hover{
+    text-decoration: underline;
+    color: #ff4500;
+}
+label{
+    position: absolute;
+    left: 70px;
+    margin-top: 7px;
+}
+form{
+    margin-top: 10vh;
+}
+legend{
+    border: 1px solid skyblue;
+    background: skyblue;
+    padding: 3px 20px;
+    border-radius: 3px;
+}
+fieldset{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    border: 1px solid skyblue;
+}
+
+#nome:focus ~ .label-name{
+    margin-top: -10px;
+}
+#nome:not(:focus):valid ~ .label-name{
+    margin-top: -10px;
+}
+#tel:focus ~ .label-senha{
+    margin-top: -10px;
+}
+#tel:not(:focus):valid ~ .label-senha{
+    margin-top: -10px;
+}
+.fechar-log{
+    float: left;
+    left: 0;
+    display: none;
+}
+
+.all-dial{
+    margin-top: -5vh;
+}
+.chosing{
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+.box:before{
+    display: block;
+}
+.box.active:before{
+    display: none;
+}
+.chosing a{
+    border: 1px solid #4263eb;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgb(0,0,0,22);
+    color: #4263eb;
+    transition: 0.6s;
+    text-decoration: none;
+}
+.chosing a:hover{
+    border: 1px solid #ff4500;
+    color: #ff4500;
+}
+.chosing .first{
+    padding: 10px 37px;
+}
+.goback{
+    display: none;
+    background: #ccc;
+    position: absolute;
+    padding: 5px 10px;
+    margin-top: -10px;
+}
+
+@media(max-width: 768px){
+    .all-dial{
+        margin-top: -10vh;
+    }
+    }
+
